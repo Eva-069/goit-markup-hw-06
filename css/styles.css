@@ -150,16 +150,34 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1440px;
   margin: 0 auto;
   background-size: cover;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
-
+.main-section > .container {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+@media screen and (min-resolutun: 2dppx),
+  (min-resolutun: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .main-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob.jpg);
+    background-repeat: no-repeat;
+  }
+}
 .main-header {
   font-weight: 700;
   font-size: 56px;
@@ -169,7 +187,15 @@ a {
   color: #fff;
   max-width: 496px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+}
+.small {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
 }
 
 .main-button {
@@ -702,9 +728,48 @@ a {
 .checkbox-footer {
   margin-bottom: 24px;
 }
+
 /* <!-- -----------------------------MEDIA 768------------------------------ --> */
 
+@media screen and (min-width: 375px) {
+  .main-section {
+    background: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-deks.jpg);
+  }
+  @media screen and (min-resolutun: 2dppx),
+    (min-resolutun: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .main-section {
+      background-color: #2e2f42;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dek.jpg);
+      background-repeat: no-repeat;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
+  .main-section > .container {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+  .main-header {
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 36px;
+  }
   .container {
     max-width: 746px;
   }
@@ -756,12 +821,48 @@ a {
   }
 }
 /* ----------------------------MEDIA 1098----------------------- */
-@media screen and (min-width: 1158px) {
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    background-color: #2e2f42;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-resolutun: 2dppx),
+  (min-resolutun: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .main-section {
+    background-color: #2e2f42;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/comp.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
     align-items: center;
+  }
+  .main-section > .container {
+    max-width: 1158px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .main-button {
+    margin-top: 48px;
   }
   .strategy-text-par {
     width: calc((100% - 24px) / 4);
