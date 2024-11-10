@@ -53,6 +53,8 @@ a {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 16px;
+  padding-bottom: 16px;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
@@ -67,6 +69,11 @@ a {
   color: #4d5ae5;
   display: inline-block;
   margin-right: 76px;
+}
+.menu-open-icon {
+  border: none;
+  display: block;
+  margin-left: auto;
 }
 .double-logo {
   font-family: "Raleway", sans-serif;
@@ -83,9 +90,10 @@ a {
   align-items: center;
 }
 .header-menu-link {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 40px;
+  display: none;
 }
 
 .header-menu {
@@ -126,9 +134,10 @@ a {
 }
 
 .contact-link {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 40px;
+  display: none;
 }
 
 .contact-mail {
@@ -156,8 +165,6 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   background-size: cover;
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
   padding-top: 72px;
   padding-bottom: 72px;
 }
@@ -243,7 +250,7 @@ a {
   flex-wrap: wrap;
 }
 .strategy {
-  padding-top: 16px;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 .icon-strategy-div {
@@ -833,22 +840,22 @@ a {
       url(../images/people-office.jpg);
     background-repeat: no-repeat;
   }
-}
-@media screen and (min-resolutun: 2dppx),
-  (min-resolutun: 192dpi),
-  (-webkit-min-device-pixel-ratio: 2) {
-  .main-section {
-    background-color: #2e2f42;
-    max-width: 1440px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/comp.jpg);
-    background-repeat: no-repeat;
+
+  @media screen and (min-resolutun: 2dppx),
+    (min-resolutun: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .main-section {
+      background-color: #2e2f42;
+      max-width: 1440px;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/comp.jpg);
+      background-repeat: no-repeat;
+    }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
