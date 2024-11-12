@@ -415,28 +415,7 @@ a {
   text-align: center;
   padding: 32px 0;
 }
-.footer {
-  background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.text-footer {
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  margin-top: 17.5px;
-  max-width: 264px;
-}
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 117%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-}
+
 .header-two {
   text-transform: capitalize;
   font-weight: 700;
@@ -554,7 +533,30 @@ a {
 .portfolio-li:hover .text-cover {
   transform: translateY(0);
 }
-
+.footer {
+  background: #2e2f42;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.text-footer {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin-top: 17.5px;
+  max-width: 264px;
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
@@ -565,6 +567,9 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-list {
   font-weight: 500;
@@ -573,18 +578,28 @@ a {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align-last: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-icon {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-div {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  /* margin-right: 24px; */
+  width: 264px;
 }
 .footer-list-div {
 }
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: center;
+}
+.footer-label {
+  width: 100%;
 }
 .footer-icon:hover {
   background-color: #31d0aa;
@@ -594,6 +609,61 @@ a {
 }
 .footer-ula {
   gap: 16px;
+}
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.footer-form-input {
+  /* margin-left: 80px; */
+  display: block;
+}
+.footer-container {
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  align-items: baseline;
+  width: 552px;
+  /* padding: 96px 108px; */
+}
+.footer-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-btn {
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer-icon-btn {
+  margin-left: 16px;
 }
 .backdrop {
   width: 100%;
@@ -809,49 +879,7 @@ a {
 .user-field {
   margin-bottom: 16px;
 }
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
-.footer-form-input {
-  margin-left: 80px;
-}
-.footer-input {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  background-color: transparent;
-  padding-right: 16px;
-  padding-left: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 200%;
-  letter-spacing: 0.04em;
-  color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.footer-btn {
-  border-radius: 4px;
-  padding: 8px 24px;
-  min-width: 165px;
-  height: 40px;
-  background-color: #4d5ae5;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
-  border: none;
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-}
-.footer-icon-btn {
-  margin-left: 16px;
-}
+
 .checkbox-footer {
   margin-bottom: 24px;
 }
